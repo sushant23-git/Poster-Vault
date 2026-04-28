@@ -1,0 +1,6 @@
+{
+  "name": "PosterVault",
+  "description": "Download high-quality movie posters from Letterboxd and IMDb lists instantly.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
