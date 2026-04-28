@@ -18,10 +18,7 @@ async function startServer() {
   // TMDB Proxy
   app.get("/api/tmdb/*", async (req, res) => {
     try {
-      const tmdbKey = process.env.TMDB_API_KEY;
-      if (!tmdbKey) {
-        return res.status(500).json({ error: "TMDB_API_KEY is not configured" });
-      }
+      const tmdbKey = "89878ed48daba204669060d597e3c67f";
 
       const endpoint = req.params[0];
       const params = { ...req.query, api_key: tmdbKey };
